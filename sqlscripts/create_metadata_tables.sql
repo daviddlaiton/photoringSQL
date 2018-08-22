@@ -15,11 +15,11 @@ CREATE TABLE `photoDimension` (
   KEY `photoDimension_index_photo_id` (`photo_id`),
   KEY `photoDimension_photo_id_dim_name` (`dimension_name`,`photo_id`) USING BTREE,
   KEY `photoDimension_dim_name_and_value` (`dimension_name`,`dimension_value`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=69729241 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 
 -- inserting data from every dimension
 
--- Title
+-- Title  
 INSERT INTO photoDimension
 (photo_id, dimension_name, dimension_value, name, description, server, secret, URL, ThumbnailURL)
 select

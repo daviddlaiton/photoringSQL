@@ -2,28 +2,48 @@
 
 ![Photoring live screenshot](/static/img/photoringLive.png)
 
+PhotoRing is a tool that allows someone visualize and traverse a big repository of images across *all its dimensions*. It offers the user a sense of location within the dataset. A user can change dimensions, jump between sections and zoom in and out in order to see more or less photos.
+
 You can see a live version of this app [here!](http://photoring.herokuapp.com)
 
-PhotoRing is a tool that allows someone visualize and traverse a big repository of images across *all its dimensions*. It offers the user a sense of location within the dataset. A user can change dimensions, jump between sections and zoom in and out in order to see more or less photos. 
+## Getting Started
+To get a copy of these project install git bash, open it from the command line and use 
+$ git clone: https://github.com/daviddlaiton/photoringSQL
 
+### Prerequisites
 
-## How to run it
+Firstly, you need to install nodeJS, the installer can be downloaded from: https://nodejs.org/es/
+Be sure to select the install npm option and the addToPATH option during the installation process.
 
+Secondly, you need to install MySQL server. The installing instruccions are in: https://dev.mysql.com/doc/refman/8.0/en/installing.html 
+You only need the server, but installing additional software it's optional.
+
+Finally, you need a SQL Clien. It can be one of your preference.
+
+Checklist
+```
+NodeJS
+MySQL Server
+MySQL Client
+```
 
 ### Database configuration
-Create an empty mySQL database with the name `photoring`.  In the scripts contained in the `/sqlscripts`directory which you need to run to deploy the project, , the database name is `photoring`. If you named your database differently, you must change the name in the scripts. 
 
-Run the following scripts in the order below:
+1. create an empty mySQL database with the name `photoring`. This can be done from the MySQL client.
 
-1. `create_tables.sql`. After running this script, insert the data into the table the script created (`photos`) using the method you prefer. 
+**Warning** Is important to name the database correctly, if don't it's necesary to change the information on the code.
 
-2. `create_metadata_tables.sql`: This scripts create the necessary tables for the operation of Photoring.
+2. Run the script named `create_tables.sql` on MySQL client. 
 
-Replace the configuration file `config.js` with the connection to the database you just created.
+3. Insert the data (Available in `/dataset/photos.csv`) into the table the script created (`photos`) using the method you prefer. 
 
-### Running the server
+4. Run the script named `create_metadata_tables.sql`: This scripts create the necessary tables for the operation of Photoring.
 
-You must have Node.js installed on your machine. All the necessary dependencies are already located in the `node_modules` directory. Open a terminal in the directory of the proyect and run the following commands:
+5. Replace the configuration file `config.js` with the connection to the database you just created.
+
+### How to run it
+
+ All the necessary dependencies are already located in the  `node_modules` directory. Open a terminal in the directory of the proyect and run the following commands:
 
 ```
 npm start
@@ -33,7 +53,7 @@ o
 node server.js
 ```
 
-The server should have started listening at http://:::8087 (localhost). If you want to change the listening port of the server, go to the `config.js` configuration file.
+The server should have started listening at http://localhost:8087. If you want to change the listening port of the server, go to the `config.js` configuration file.
 
 
 ## How to use it
@@ -43,9 +63,6 @@ The server should have started listening at http://:::8087 (localhost). If you w
 ### Video on how to use Photoring 
 
 Spanish [here](https://www.youtube.com/watch?v=PArgtZ5IpsU).
-
-English [here](https://www.youtube.com/watch?v=PArgtZ5IpsU).
-
 
 ### Explanation
 
