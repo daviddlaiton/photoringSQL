@@ -8,7 +8,10 @@ You can see a live version of this app [here!](http://photoring.herokuapp.com)
 
 ## Getting Started
 To get a copy of these project install git bash, open it from the command line and use 
+```
 $ git clone: https://github.com/daviddlaiton/photoringSQL
+
+```
 
 ### Prerequisites
 
@@ -18,7 +21,7 @@ Be sure to select the install npm option and the addToPATH option during the ins
 Secondly, you need to install MySQL server. The installing instruccions are in: https://dev.mysql.com/doc/refman/8.0/en/installing.html 
 You only need the server, but installing additional software it's optional.
 
-Finally, you need a SQL Clien. It can be one of your preference.
+Finally, you need a SQL Client. It can be one of your preference.
 
 Checklist
 ```
@@ -31,7 +34,7 @@ MySQL Client
 
 1. create an empty mySQL database with the name `photoring`. This can be done from the MySQL client.
 
-**Warning** Is important to name the database correctly, if don't it's necesary to change the information on the code.
+	**Warning** Is important to name the database correctly, if don't it's necesary to change the information on the code.
 
 2. Run the script named `create_tables.sql` on MySQL client. 
 
