@@ -10,7 +10,6 @@ You can see a live version of this app [here!](http://photoring.herokuapp.com)
 To get a copy of these project install git bash, open it from the command line and use 
 ```
 $ git clone: https://github.com/daviddlaiton/photoringSQL
-
 ```
 
 ### Prerequisites
@@ -23,7 +22,7 @@ You only need the server, but installing additional software it's optional.
 
 Finally, you need a SQL Client. It can be one of your preference.
 
-Checklist
+Checklist:
 ```
 NodeJS
 MySQL Server
@@ -105,14 +104,3 @@ In the image above you can see 3 different colored boxes:
 	8. Zoom in
 
 3. Box 3. Visualization panel: Panel in which photos/images are showed according to the current zoom level. Photos that belong to the same section have the same background color. As mentioned earlier. Photos are displayed in order, from top to bottom, according to the order associated with the current dimension. A user can also change the current 
-
-
-
-
-
-
-
-
-
-
-
